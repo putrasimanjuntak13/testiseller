@@ -9,10 +9,10 @@
       "value": true
     },	
     "domainToJoin": {
-      "value": "ecomindo.com"
+      "value": "iseller2.local"
     },
     "domainUsername": {
-      "value": "ecomindo\\domainadmin"
+      "value": "iseller2\\domainadmin"
     },
     "location": {
       "value": "southeastasia"
@@ -56,7 +56,7 @@
       "value": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.Network/virtualNetworks/is-sql1-copy-vnet2"
     },
     "virtualMachineRG": {
-      "value": "RG_SIMULATION_DEST"
+      "value": "POCiSeller"
     },
     "osDiskId": {
         "value": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.Compute/disks/is-sql1-OSdisk-00-copy-disk"
@@ -89,7 +89,7 @@
       "value": false
     },
     "diagnosticsStorageAccountName": {
-      "value": "isellercopytest"
+      "value": "isellercopytest3"
     },
     "diagnosticsStorageAccountId": {
       "value": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.Storage/storageAccounts/isellercopytest3"
