@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "publicIpAddressType": {
+      "value": "Static"
+    },
+     "requirePublicIp": {
+      "value": true
+    },	
+    "domainToJoin": {
+      "value": "iseller2.local"
+    },
+    "domainUsername": {
+      "value": "iseller2\\domainadmin"
+    },
+    "location": {
+      "value": "southeastasia"
+    },
+    "adminPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.KeyVault/vaults/isellerpoc"
+        },
+        "secretName": "vm-admin-password"
+      }
+    },
+    "domainAdminPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.KeyVault/vaults/isellerpoc"
+        },
+        "secretName": "domainadmin-password"
+      }
+    },
+    "certPassword": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.KeyVault/vaults/isellerpoc"
+        },
+        "secretName": "cert-password"
+      }
+    },
+    "vmSecureArguments": {
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.KeyVault/vaults/isellerpoc"
+        },
+        "secretName": "vm-secret-arguments"
+      }
+    },
+    "enableAcceleratedNetworking": {
+      "value": true
+    },
+    "virtualNetworkId": {
+      "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.Network/virtualNetworks/is-sql1-copy-vnet"
+    },
+    "virtualMachineRG": {
+      "value": "RG_SIMULATION_DEST"
+    },
+    "osDiskId": {
+        "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.Compute/disks/is-sql1-OSdisk-00-copy-disk"
+      },
+    "dataDiskId1": {
+        "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.Compute/disks/is-sql1-datadisk-01-copy-disk"
+    },
+    "dataDiskId2": {
+        "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.Compute/disks/is-sql1-datadisk-02-copy-disk"
+    },
+    "virtualMachineSize": {
+      "value": "Standard_B2s"
+    },
+	"virtualMachineName": {
+      "value": "is-sql1-copy-VM"
+    },
+    "adminUsername": {
+      "value": "vmadmin"
+    },
+	"subnetName": {
+      "value": "default"
+    },
+	"deploymentGroup": {
+      "value": "SQLVM"
+    },
+    "patchMode": {
+      "value": "AutomaticByOS"
+    },
+    "enableHotpatching": {
+      "value": false
+    },
+    "diagnosticsStorageAccountName": {
+      "value": "isellercopytest"
+    },
+    "diagnosticsStorageAccountId": {
+      "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION/providers/Microsoft.Storage/storageAccounts/isellercopytest"
+    }
+  }
+}
