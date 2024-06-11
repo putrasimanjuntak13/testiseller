@@ -80,7 +80,7 @@
       "value": "default"
     },
 	"deploymentGroup": {
-      "value": "SQLVM"
+      "value": "xxx"
     },
     "patchMode": {
       "value": "AutomaticByOS"
