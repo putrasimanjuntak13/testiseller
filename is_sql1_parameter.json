@@ -20,7 +20,7 @@
     "adminPassword": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.KeyVault/vaults/isellerpoc"
+          "id": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.KeyVault/vaults/isellerpoc2"
         },
         "secretName": "vm-admin-password"
       }
@@ -28,7 +28,7 @@
     "domainAdminPassword": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.KeyVault/vaults/isellerpoc"
+          "id": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.KeyVault/vaults/isellerpoc2"
         },
         "secretName": "domainadmin-password"
       }
@@ -36,7 +36,7 @@
     "certPassword": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.KeyVault/vaults/isellerpoc"
+          "id": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.KeyVault/vaults/isellerpoc2"
         },
         "secretName": "cert-password"
       }
@@ -44,7 +44,7 @@
     "vmSecureArguments": {
       "reference": {
         "keyVault": {
-          "id": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.KeyVault/vaults/isellerpoc"
+          "id": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.KeyVault/vaults/isellerpoc2"
         },
         "secretName": "vm-secret-arguments"
       }
@@ -53,19 +53,19 @@
       "value": true
     },
     "virtualNetworkId": {
-      "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.Network/virtualNetworks/is-sql1-copy-vnet"
+      "value": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.Network/virtualNetworks/is-sql1-copy-vnet2"
     },
     "virtualMachineRG": {
       "value": "RG_SIMULATION_DEST"
     },
     "osDiskId": {
-        "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.Compute/disks/is-sql1-OSdisk-00-copy-disk"
+        "value": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.Compute/disks/is-sql1-OSdisk-00-copy-disk"
       },
     "dataDiskId1": {
-        "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.Compute/disks/is-sql1-datadisk-01-copy-disk"
+        "value": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.Compute/disks/is-sql1-datadisk-01-copy-disk"
     },
     "dataDiskId2": {
-        "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION_DEST/providers/Microsoft.Compute/disks/is-sql1-datadisk-02-copy-disk"
+        "value": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.Compute/disks/is-sql1-datadisk-02-copy-disk"
     },
     "virtualMachineSize": {
       "value": "Standard_B2s"
@@ -92,7 +92,7 @@
       "value": "isellercopytest"
     },
     "diagnosticsStorageAccountId": {
-      "value": "/subscriptions/d3b269f8-d5f8-4942-ba31-158fb47c0ce9/resourceGroups/RG_SIMULATION/providers/Microsoft.Storage/storageAccounts/isellercopytest"
+      "value": "/subscriptions/f346e851-10a3-4f2c-9875-230cbdb7230a/resourceGroups/POCiSeller/providers/Microsoft.Storage/storageAccounts/isellercopytest3"
     }
   }
 }
